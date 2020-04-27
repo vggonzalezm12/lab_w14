@@ -42,9 +42,10 @@ You are free to use any implementation you like of the above types, provided tha
 	- `peek()`: returns the relevant content of the head element without removing it from the queue
 	- `dequeue()`: returns the top element and removes it from the queue
 	- `enqueue(data d)`: adds d to the tail of the queue
+
 _Note_: You may have to implement additional methods such as `isEmpty` or `isFull`, depending on your implementation choices.
 
-_Note_: we provide you with:
+_NOTE_ we provide you with:
 - Some code pertaining to `ExpressionBT.java`; 
 - Starter code for `PostfixExpression.java`; 
 - Starter code for `IntStack.java`;
