@@ -4,9 +4,7 @@ In this lab assignment, we are going to practice using stacks and queues with bi
 ## What is the scenario?
 In this lab, we are going to play with arithmetic expressions. 
 <br/>You are going to use two main representations of arithmetic expressions: post-fix notation (see class notes for details on what post-fix notation is) and as binary trees (see class notes for details on what such binary trees are like).
-
 <br/>You will use the post-fix notation to evaluate your expression.
-
 <br/>You will use the binary tree representation to: 1/ evaluation your expression, 2/ print your expression in in-fix notation with parentheses, and 3/ traverse it in level-order fashion to gather the list of all of its values and variables.
 
 ## Let’s build data structures
@@ -31,9 +29,9 @@ Let’s go over the details you will need to implement for each type. Note that 
 | _Methods_:<br>__Constructors__: <br>- `ExpressionBT()`<br>- `ExpressionBT(String[] e)`<br>__Accessors / getters__:<br>- `getType()`<br>- `getValue()`<br>- `getVariable()`<br>- `getLeft()`<br>- `getRight()`<br>__Modifiers / setters__:<br>- `setType(String t)`<br>- `setValue(int v)`<br>- `setVariable(String var)`<br>- `setLeft(ExpressionBT b)`<br>- `setRight(ExpressionBT b)`<br>__Other methods__:<br>- `evaluate()`: _traverses the expression using recursion and returns an integer: the integer value of the expression. __Note__: only if there are no variables in the expression. If there are variables, print out that you cannot evaluate and return 0_<br>- `print()`: _prints out the expression in infix notation with parentheses, using a BTStack_<br>- `allVariables()`: _void method. It prints out all variables in the tree, if any. If there is no variable, it prints out “no variable in this expression”. This method should use a BTQueue._<br>- `includesVariables()`: _returns true if the expression contains at least one variable, false otherwise_ |
 
 To implement a few of the above methods, you will need to have a few additional types: 
-- A stack of integers, called IntStack
-- A stack of nodes (nodes that form your expression binary tree), BTStack
-- A queue of nodes (nodes that form your expression binary tree): BTQueue
+- A stack of integers, called `IntStack`
+- A stack of nodes (nodes that form your expression binary tree), `BTStack`
+- A queue of nodes (nodes that form your expression binary tree): `BTQueue`
 
 You are free to use any implementation you like of the above types, provided that they respect the following signatures of methods:
 - For both stacks:
@@ -47,11 +45,11 @@ You are free to use any implementation you like of the above types, provided tha
 _Note_: You may have to implement additional methods such as `isEmpty` or `isFull`, depending on your implementation choices.
 
 _Note_: we provide you with:
-- Some code pertaining to ExpressionBT.java; 
-- Starter code for PostfixExpression.java; 
-- Starter code for IntStack.java;
-- Starter code for BTStack.java; and
-- Starter code for BTQueue.java.
+- Some code pertaining to `ExpressionBT.java`; 
+- Starter code for `PostfixExpression.java`; 
+- Starter code for `IntStack.java`;
+- Starter code for `BTStack.java`; and
+- Starter code for `BTQueue.java`.
 
 You have to complete all of the above files by following the guidelines provided to you earlier in this document.
 <br/>You also have to provide 5 test cases for each of the major methods: the two `evaluate` methods, `allVariables`, and `print`, in a file called `BTSQTester.java`.
